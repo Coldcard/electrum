@@ -25,6 +25,7 @@ similar system.
 
 3. The generated binaries can be easily extracted
     ```
+    $ git checkout $REV
     $ sudo docker run --rm --detach --name tmp_electrum -i electrum-img
     $ sudo docker cp tmp_electrum:/opt/wine64/drive_c/electrum/contrib/build-wine/dist .
     $ sudo docker stop tmp_electrum
