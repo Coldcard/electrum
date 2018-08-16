@@ -1,4 +1,5 @@
 FROM ubuntu:18.04@sha256:5f4bdc3467537cbbe563e80db2c3ec95d548a9145d64453b06939c4592d67b6d
+ARG GIT_REV
 
 ENV LC_ALL=C.UTF-8 LANG=C.UTF-8
 
@@ -34,4 +35,4 @@ RUN dpkg --add-architecture i386 && \
 
 COPY . /opt/wine64/drive_c/electrum
 
-RUN cd /opt/wine64/drive_c/electrum/contrib/build-wine && ./build.sh
+RUN cd /opt/wine64/drive_c/electrum/contrib/build-wine && ./build.sh $GIT_REV
