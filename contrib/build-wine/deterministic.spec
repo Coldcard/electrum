@@ -59,7 +59,7 @@ a = Analysis([home+'electrum',
               home+'plugins/trezor/qt.py',
               home+'plugins/keepkey/qt.py',
               home+'plugins/ledger/qt.py',
-              home+'electrum/plugins/coldcard/qt.py',
+              home+'plugins/coldcard/qt.py',
               #home+'packages/requests/utils.py'
               ],
              binaries=binaries,
